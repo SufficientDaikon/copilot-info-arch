@@ -1,0 +1,14 @@
+{
+  "name": "copilot-info-arch",
+  "description": "Information architecture agent that creates sitemaps, screen inventories, navigation designs, user flows, and content strategies. Part of the sdd-vscode-agents collection.",
+  "version": "1.0.0",
+  "author": { "name": "SufficientDaikon" },
+  "license": "MIT",
+  "homepage": "https://github.com/SufficientDaikon/copilot-info-arch",
+  "repository": "https://github.com/SufficientDaikon/copilot-info-arch",
+  "keywords": ["information-architecture", "sitemap", "navigation", "user-flows", "content-strategy"],
+  "category": "Design",
+  "tags": ["sdd-vscode-agents"],
+  "agents": "agents/",
+  "hooks": "hooks.json"
+}
