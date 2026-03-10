@@ -1,70 +1,63 @@
+<div align="center">
+
+<img src="https://img.shields.io/badge/VS%20Code%20Copilot%20Agent-Information%20Architect-A177FE?style=for-the-badge&logo=github-copilot&logoColor=white" />
+
 # copilot-info-arch
 
-> **Part of [sdd-vscode-agents](https://github.com/SufficientDaikon/sdd-vscode-agents)** — install the full collection for the complete SDD pipeline + UI/UX lifecycle.
+*Creates sitemaps, screen inventories, navigation designs, and user flows.*
 
-A VS Code Copilot agent plugin that creates comprehensive information architecture — sitemaps, navigation design, user flows, and content strategies.
+[![Part of SDD Agent Suite](https://img.shields.io/badge/Part%20of-SDD%20Agent%20Suite-A177FE?style=flat-square)](https://github.com/SufficientDaikon/sdd-vscode-agents)
 
-## What it does
+</div>
 
-The **info-arch** agent structures your product's information:
-- Creates a complete sitemap with page hierarchy
-- Designs navigation systems (primary, secondary, utility)
-- Maps user flows for key tasks
-- Defines content models and page templates
-- Creates a screen inventory with prioritization
+---
 
-## Hooks included
+## What It Does
 
-| Hook | Event | What it does |
-|------|-------|-------------|
-| **Research brief detection** | `SessionStart` | Auto-detects research-brief.md from the UX research phase |
-| **IA completion** | `Stop` | Checks for information-architecture.md and suggests next step (wireframing) |
+The **Information Architect** agent organizes your application's content structure, navigation, and user flows. It produces comprehensive sitemaps, screen inventories, navigation hierarchies, and flow diagrams that serve as the blueprint for your UI.
 
-## Install
+It takes research findings (ideally from the UX Research agent) and translates user needs into a logical information structure. Every screen is inventoried, every navigation path is mapped, and every user flow is documented with clear entry points, decision nodes, and outcomes.
 
-### Via Copilot CLI
-```bash
-copilot plugin install SufficientDaikon/copilot-info-arch
-```
+The IA document it produces ensures your application is intuitive to navigate, content is findable, and user flows are efficient — all before a single pixel is designed.
 
-### Via VS Code settings
+## Features
 
-Clone the repo and add to your `settings.json`:
-```json
-"chat.plugins.paths": {
-    "/path/to/copilot-info-arch": true
-}
-```
+- ✅ Sitemap design with hierarchical page structure
+- ✅ Screen inventory with content requirements
+- ✅ Navigation structure and wayfinding patterns
+- ✅ User flow diagrams with decision points
 
-### Via local path
-```bash
-git clone https://github.com/SufficientDaikon/copilot-info-arch.git
-copilot plugin install ./copilot-info-arch
-```
+## Installation
+
+1. Install the [SDD VS Code Agents](https://github.com/SufficientDaikon/sdd-vscode-agents) extension
+2. Open VS Code Copilot Chat
+3. Use `@info-arch` to invoke this agent
 
 ## Usage
 
-Switch to the **info-arch** agent in VS Code chat, then:
 ```
-Create the information architecture for this project based on research-brief.md
-```
-**Expected output**: A comprehensive information-architecture.md with sitemap, navigation, user flows, and content strategy.
-
-## Pipeline position
-
-```
-ux-research -> **info-arch** -> wireframe
+@info-arch Create the information architecture for a SaaS analytics platform
 ```
 
-## Full collection
+## Part of the SDD Agent Suite
 
-This agent works best as part of the full SDD + UI/UX pipeline. Install all 13 agents:
+This agent is one of 13 specialized Copilot Chat participants in the [SDD VS Code Agents](https://github.com/SufficientDaikon/sdd-vscode-agents) ecosystem.
 
-```bash
-copilot plugin install SufficientDaikon/sdd-vscode-agents
-```
-
-See the [full collection](https://github.com/SufficientDaikon/sdd-vscode-agents) for documentation and the complete agent list.
+| Agent | Role |
+|---|---|
+| **spec-writer** | Specification Architect |
+| **implementer** | Implementation Engineer |
+| **reviewer** | Compliance Reviewer |
+| **packager** | Package Engineer |
+| **ui-lifecycle-master** | UI Lifecycle Orchestrator |
+| **ux-research** | UX Researcher |
+| **info-arch** | Information Architect |
+| **wireframe** | Wireframe Designer |
+| **ui-design** | Visual Designer |
+| **ux-design** | UX Designer |
+| **frontend-impl** | Frontend Engineer |
+| **design-reviewer** | Design Reviewer |
+| **ux-testing** | UX Tester |
 
 ## License
 
